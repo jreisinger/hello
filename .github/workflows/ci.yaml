@@ -44,7 +44,7 @@ jobs:
           args: release --clean
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  release-docker:
+  docker:
     needs: test
     if: startsWith(github.ref, 'refs/tags/v')
     uses: docker/github-builder/.github/workflows/build.yml@v1
