@@ -60,6 +60,7 @@ jobs:
       meta-tags: |
         type=ref,event=branch
         type=sha
+        type=semver,pattern={{version}}
     secrets:
       registry-auths: |
         - registry: ghcr.io

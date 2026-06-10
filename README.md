@@ -18,5 +18,11 @@ Create a release
 
 ```
 $ git tag v0.0.1
-$ git push origin v0.0.1 
+$ git push origin v0.0.1
+```
+
+Run the release image
+
+```
+$ docker run ghcr.io/jreisinger/hello:0.0.1
 ```
